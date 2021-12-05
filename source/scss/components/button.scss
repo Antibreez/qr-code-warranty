@@ -1,0 +1,52 @@
+.button-primary,
+.button-secondary,
+.button-light {
+  @include h6;
+  padding: 16px;
+  background-color: $primary;
+  color: $white;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.2s, color 0.2s;
+
+  &:hover {
+    background-color: $additional;
+    cursor: pointer;
+  }
+
+  &:disabled {
+    background-color: $grey300;
+  }
+}
+
+.button-secondary {
+  color: $main-text;
+  background-color: $grey200;
+
+  &:hover {
+    background-color: $grey250;
+  }
+
+  &:disabled {
+    background-color: $grey200;
+    color: $grey300;
+  }
+}
+
+.button-light {
+  background-color: transparent;
+  padding: 0;
+  color: $primary;
+  text-align: left;
+
+  &:hover {
+    background-color: transparent;
+    color: $additional;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    color: $grey300;
+  }
+}

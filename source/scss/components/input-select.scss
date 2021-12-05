@@ -1,0 +1,85 @@
+.input-select {
+  position: relative;
+
+  label {
+    @include b2;
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 100%;
+    padding: 0 16px;
+    color: $minor-text;
+    pointer-events: none;
+    z-index: 100;
+  }
+}
+
+.ui-selectmenu-button.ui-button {
+  @include b1;
+  height: 64px;
+  width: 100%;
+  padding: 29px 16px 11px;
+  color: $main-text;
+  border: none;
+  background-color: $grey200;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+
+  &.ui-selectmenu-button-open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:not(:disabled):hover {
+    background-color: $grey250;
+  }
+}
+
+.ui-selectmenu-text {
+  @include b1;
+  color: $main-text;
+  font-family: $font;
+}
+
+.ui-widget.ui-widget-content {
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.ui-menu .ui-menu-item {
+  list-style: none;
+  font-family: $font;
+}
+
+.ui-menu .ui-menu-item-wrapper {
+  padding: 11px 16px;
+  background-color: $grey200;
+}
+
+.ui-widget-content .ui-state-active {
+  border: none;
+  color: $main-text;
+  margin: 0;
+  background-color: $grey250;
+}
+
+.ui-button .ui-icon,
+.ui-button:hover .ui-icon {
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  background-image: url('../img/arrow-down.svg');
+  background-position: center;
+  z-index: 10;
+}
+
+.ui-button.ui-selectmenu-button-open .ui-icon {
+  transform: rotate(180deg);
+}

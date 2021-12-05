@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  // display: flex;
+}
+
+.reset-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+body {
+  font-family: $font;
+  min-width: $mobile;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding-left: $tablet-gap;
+  padding-right: $tablet-gap;
+
+  @include mobile {
+    padding-left: $mobile-gap;
+    padding-right: $mobile-gap;
+  }
+}

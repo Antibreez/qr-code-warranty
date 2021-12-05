@@ -1,0 +1,57 @@
+.service {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__card {
+    display: block;
+    width: calc((100% - 48px) / 4);
+    background-color: $white;
+    border: none;
+    padding: 0;
+  }
+
+  &__card-img {
+    width: 100%;
+    margin: 0 0 16px;
+    padding-top: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-size: cover;
+
+    &--diagnostics {
+      background-image: url('../img/diagnostics.jpg');
+    }
+
+    &--freon {
+      background-image: url('../img/freon.jpg');
+    }
+
+    &--inspection {
+      background-image: url('../img/inspection.jpg');
+    }
+
+    &--service {
+      background-image: url('../img/service.jpg');
+    }
+  }
+
+  &__title {
+    @include h7;
+    color: $main-text;
+  }
+}
+
+@include mobile {
+  .service {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+
+    &__card {
+      width: calc((100% - 16px) / 2);
+      margin-bottom: 24px;
+    }
+  }
+}

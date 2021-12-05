@@ -1,0 +1,16 @@
+.device-desc {
+  &__item {
+    margin-bottom: 20px;
+  }
+
+  &__item-name {
+    @include h7;
+    margin: 0 0 3px;
+    color: $main-text;
+  }
+
+  &__item-desc {
+    @include b2;
+    color: $main-text;
+  }
+}

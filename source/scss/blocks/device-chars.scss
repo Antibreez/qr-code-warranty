@@ -1,0 +1,58 @@
+.device-chars {
+  &__item {
+    margin: 0 0 25px;
+  }
+
+  &__item-title {
+    @include h6;
+    margin: 0 0 15px;
+    color: $main-text;
+  }
+
+  &__item-line {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__line-name,
+  &__line-value {
+    @include b2;
+  }
+
+  &__line-name {
+    color: $minor-text;
+  }
+
+  &__line-value {
+    color: $main-text;
+  }
+
+  &__line-dots {
+    margin: 0 10px 5px;
+    flex-grow: 1;
+    border-bottom: 1px dotted $minor-text;
+  }
+}
+
+@include mobile {
+  .device-chars {
+    &__item-line {
+      flex-direction: column;
+
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+
+    &__line-dots {
+      display: none;
+    }
+
+    &__line-name {
+      margin: 0 0 2px;
+    }
+  }
+}
