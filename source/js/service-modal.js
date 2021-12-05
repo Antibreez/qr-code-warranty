@@ -6,10 +6,12 @@ const REG_EXP = {
 const $userInput = $('#user-input').parents('.input-block')
 
 $('.service__card').on('click', function () {
-  const text = $(this).children('p').text()
-  $('.input-select__select option').removeAttr('selected')
-  $(`.input-select__select option:contains(${text})`).attr('selected', '')
   $('#service-type').selectmenu('destroy')
+
+  const text = $(this).children('p').text()
+  $('#service-type option').removeAttr('selected')
+  $(`#service-type option:contains(${text})`).attr('selected', '')
+
   $('#service-type').selectmenu()
 })
 

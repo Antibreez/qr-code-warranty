@@ -42,14 +42,6 @@
     padding-top: 24px;
   }
 
-  &__content-item {
-    display: none;
-
-    &.shown {
-      display: block;
-    }
-  }
-
   &__service-modal {
     .input-select {
       margin-bottom: 16px;

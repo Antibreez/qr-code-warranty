@@ -83,3 +83,7 @@
 .ui-button.ui-selectmenu-button-open .ui-icon {
   transform: rotate(180deg);
 }
+
+.ui-button:focus .ui-icon {
+  background-image: url('../img/arrow-down.svg');
+}

@@ -45,23 +45,23 @@
         <div class="device-info__tabs-container container">
           <ul class="device-info__tabs-list">
             <li class="device-info__tabs-item">
-              <button class="device-info__tabs-button active" data-tab="0">Услуги</button>
+              <button type="button" class="device-info__tabs-button active" data-tab="0">Услуги</button>
             </li>
             <li class="device-info__tabs-item">
-              <button class="device-info__tabs-button" data-tab="1">Сервис</button>
+              <button type="button" class="device-info__tabs-button" data-tab="1">Сервис</button>
             </li>
             <li class="device-info__tabs-item">
-              <button class="device-info__tabs-button" data-tab="2">Характеристики</button>
+              <button type="button" class="device-info__tabs-button" data-tab="2">Характеристики</button>
             </li>
             <li class="device-info__tabs-item">
-              <button class="device-info__tabs-button"  data-tab="3">Описание</button>
+              <button type="button" class="device-info__tabs-button"  data-tab="3">Описание</button>
             </li>
           </ul>
         </div>
       </div>
       <div class="device-info__content">
         <div class="device-info__content-container container">
-          <div class="device-info__content-item  shown">
+          <div class="device-info__content-item" style="display: block">
             <div class="device-info__services services">
               <div class="services__card">
                 <div class="services__card-img  services__card-img--wifi"></div>
@@ -103,28 +103,28 @@
             </div>
           </div>
 
-          <div class="device-info__content-item">
+          <div class="device-info__content-item" style="display: none">
             <div class="device-info__service service">
-              <button class="service__card" data-trigger="service-order">
+              <button type="button" class="service__card" data-trigger="service-order">
                 <div class="service__card-img  service__card-img--diagnostics"></div>
                 <p class="service__title">Диагностика и ремонт</p>
               </button>
-              <button class="service__card" data-trigger="service-order">
+              <button type="button" class="service__card" data-trigger="service-order">
                 <div class="service__card-img  service__card-img--freon"></div>
                 <p class="service__title">Плановая замена фреона</p>
               </button>
-              <button class="service__card" data-trigger="service-order">
+              <button type="button" class="service__card" data-trigger="service-order">
                 <div class="service__card-img  service__card-img--inspection"></div>
                 <p class="service__title">Плановый осмотр</p>
               </button>
-              <button class="service__card" data-trigger="service-order">
+              <button type="button" class="service__card" data-trigger="service-order">
                 <div class="service__card-img  service__card-img--service"></div>
                 <p class="service__title">Техническое обслуживание</p>
               </button>
             </div>
           </div>
 
-          <div class="device-info__content-item">
+          <div class="device-info__content-item" style="display: none">
             <div class="device-info__device-chars device-chars">
               <div class="device-chars__item">
                 <h2 class="device-chars__item-title">Основные характеристики</h2>
@@ -281,7 +281,7 @@
             </div>
           </div>
 
-          <div class="device-info__content-item">
+          <div class="device-info__content-item" style="display: none">
             <div class="device-info__device-desc device-desc">
               <div class="device-desc__item">
                 <p class="device-desc__item-name">Энергоэффективность класса A </p>
