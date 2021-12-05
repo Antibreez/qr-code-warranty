@@ -9,7 +9,8 @@ $('.service__card').on('click', function () {
   const text = $(this).children('p').text()
   $('.input-select__select option').removeAttr('selected')
   $(`.input-select__select option:contains(${text})`).attr('selected', '')
-  $('#service-type').selectmenu('refresh')
+  $('#service-type').selectmenu('destroy')
+  $('#service-type').selectmenu()
 })
 
 $('#user-input').on('input', function () {
