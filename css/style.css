@@ -2973,6 +2973,9 @@ body {
       -ms-transform: rotate(180deg);
           transform: rotate(180deg); }
 
+.ui-button:focus .ui-icon {
+  background-image: url("../img/arrow-down.svg"); }
+
 .modal {
   position: fixed;
   top: 0;
@@ -3263,10 +3266,6 @@ body {
                 transform: translateX(-50%); }
   .device-info__content {
     padding-top: 24px; }
-  .device-info__content-item {
-    display: none; }
-    .device-info__content-item.shown {
-      display: block; }
   .device-info__service-modal .input-select {
     margin-bottom: 16px; }
   .device-info__service-modal .input-block:not(:last-of-type) {
@@ -3403,7 +3402,10 @@ body {
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
   .service__card {
     display: block;
     width: calc((100% - 48px) / 4);
@@ -3430,7 +3432,8 @@ body {
     font-size: 12px;
     line-height: 14px;
     font-weight: 500;
-    color: #151515; }
+    color: #151515;
+    text-align: left; }
 
 @media (max-width: 767px) {
   .service {
