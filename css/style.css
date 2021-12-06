@@ -3272,6 +3272,8 @@ body {
     margin-bottom: 16px; }
   .device-info__service-modal .input-block:not(:last-of-type) {
     margin-bottom: 16px; }
+  .device-info__access-modal .input-block:not(:last-of-type) {
+    margin-bottom: 16px; }
 
 @media (max-width: 767px) {
   .device-info {
@@ -3396,6 +3398,29 @@ body {
       font-weight: 500; }
     .device-promo__cloud-desc-link:hover span {
       color: #aad2ff; }
+  .device-promo__access-link {
+    margin: 0;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    display: block;
+    color: #6c7684;
+    padding: 16px;
+    background-color: #f4f4f8;
+    border-radius: 8px;
+    border: none;
+    text-align: left; }
+    .device-promo__access-link p {
+      margin: 0 0 10px; }
+    .device-promo__access-link span {
+      margin: 0;
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 500; }
+    .device-promo__access-link:hover {
+      cursor: pointer; }
+      .device-promo__access-link:hover span {
+        color: #aad2ff; }
   .device-promo__installation-link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3431,6 +3456,22 @@ body {
       transition: color 0.2s; }
     .device-promo__installation-link:hover svg {
       color: #5ea9ff; }
+  .device-promo__status {
+    margin: 0 0 16px; }
+  .device-promo__status-value {
+    margin: 0;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #151515; }
+    .device-promo__status-value::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin-right: 8px;
+      border-radius: 50%;
+      background-color: #1ed77e; }
 
 @media (max-width: 767px) {
   .device-promo__content {
@@ -3572,15 +3613,33 @@ body {
     font-weight: 400;
     margin: 0 0 10px;
     color: #6c7684; }
-  .services__card-active-desc::before {
-    content: '';
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    margin-right: 8px;
-    vertical-align: baseline;
-    border-radius: 50%;
-    background-color: #1ed77e; }
+  .services__card-active-desc {
+    margin-top: auto; }
+    .services__card-active-desc::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin-right: 8px;
+      vertical-align: baseline;
+      border-radius: 50%;
+      background-color: #1ed77e; }
+  .services__cloud-card-active-desc {
+    margin: 0;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #6c7684;
+    margin-top: auto; }
+    .services__cloud-card-active-desc::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin-right: 8px;
+      vertical-align: baseline;
+      border-radius: 50%;
+      background-color: #1ed77e; }
   .services__card-link {
     margin-top: auto; }
   .services .services__card.done {
