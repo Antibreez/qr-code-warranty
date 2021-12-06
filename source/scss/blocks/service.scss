@@ -10,6 +10,10 @@
     background-color: $white;
     border: none;
     padding: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__card-img {

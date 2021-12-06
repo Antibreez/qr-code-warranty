@@ -11,6 +11,7 @@
   }
 
   &__img-block {
+    flex-shrink: 0;
     width: 330px;
     height: 330px;
     margin-right: 30px;
@@ -81,6 +82,64 @@
     @include b2;
     padding-right: 10px;
     color: $main-text;
+  }
+
+  &__cloud-desc-link {
+    @include b2;
+    display: block;
+    color: $minor-text;
+    padding: 16px;
+    margin: 0 0 12px;
+    background-color: $grey200;
+    border-radius: 8px;
+
+    p {
+      margin: 0 0 10px;
+    }
+
+    span {
+      @include h7;
+    }
+
+    &:hover {
+      span {
+        color: $additional;
+      }
+    }
+  }
+
+  &__installation-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 12px;
+    padding: 16px;
+    background-color: $grey200;
+    border-radius: 8px;
+
+    p {
+      @include b2;
+      color: $minor-text;
+      margin: 0;
+      padding-right: 16px;
+    }
+
+    span {
+      display: block;
+      width: 24px;
+      height: 24px;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+      color: $minor-text;
+      transition: color 0.2s;
+    }
+
+    &:hover svg {
+      color: $primary;
+    }
   }
 }
 
