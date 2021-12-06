@@ -3074,6 +3074,8 @@ body {
             justify-content: center;
     border: none;
     background-color: transparent; }
+    .modal__close:hover {
+      cursor: pointer; }
     .modal__close svg {
       width: 24px;
       height: 24px; }
@@ -3294,6 +3296,8 @@ body {
     display: -ms-flexbox;
     display: flex; }
   .device-promo__img-block {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     width: 330px;
     height: 330px;
     margin-right: 30px;
@@ -3372,6 +3376,61 @@ body {
     font-weight: 400;
     padding-right: 10px;
     color: #151515; }
+  .device-promo__cloud-desc-link {
+    margin: 0;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    display: block;
+    color: #6c7684;
+    padding: 16px;
+    margin: 0 0 12px;
+    background-color: #f4f4f8;
+    border-radius: 8px; }
+    .device-promo__cloud-desc-link p {
+      margin: 0 0 10px; }
+    .device-promo__cloud-desc-link span {
+      margin: 0;
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 500; }
+    .device-promo__cloud-desc-link:hover span {
+      color: #aad2ff; }
+  .device-promo__installation-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0 12px;
+    padding: 16px;
+    background-color: #f4f4f8;
+    border-radius: 8px; }
+    .device-promo__installation-link p {
+      margin: 0;
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 400;
+      color: #6c7684;
+      margin: 0;
+      padding-right: 16px; }
+    .device-promo__installation-link span {
+      display: block;
+      width: 24px;
+      height: 24px; }
+    .device-promo__installation-link svg {
+      width: 24px;
+      height: 24px;
+      color: #6c7684;
+      -webkit-transition: color 0.2s;
+      -o-transition: color 0.2s;
+      transition: color 0.2s; }
+    .device-promo__installation-link:hover svg {
+      color: #5ea9ff; }
 
 @media (max-width: 767px) {
   .device-promo__content {
@@ -3412,6 +3471,8 @@ body {
     background-color: #ffffff;
     border: none;
     padding: 0; }
+    .service__card:hover {
+      cursor: pointer; }
   .service__card-img {
     width: 100%;
     margin: 0 0 16px;
@@ -3470,6 +3531,8 @@ body {
     -webkit-box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden; }
+    .services__card:hover span {
+      color: #aad2ff; }
   .services__card-img {
     width: 100%;
     padding-top: 30%;
@@ -3481,6 +3544,8 @@ body {
       background-image: url("../img/monitoring.jpg"); }
     .services__card-img--warranty {
       background-image: url("../img/warranty.jpg"); }
+    .services__card-img--assistant {
+      background-image: url("../img/promos-banner.jpg"); }
   .services__card-content {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
