@@ -7,3 +7,4 @@ import './input-select'
 
 import './service-select'
 import './service-modal'
+import './access-modal'

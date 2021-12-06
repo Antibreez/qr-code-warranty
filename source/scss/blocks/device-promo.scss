@@ -108,6 +108,33 @@
     }
   }
 
+  &__access-link {
+    @include b2;
+    display: block;
+    color: $minor-text;
+    padding: 16px;
+    background-color: $grey200;
+    border-radius: 8px;
+    border: none;
+    text-align: left;
+
+    p {
+      margin: 0 0 10px;
+    }
+
+    span {
+      @include h7;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      span {
+        color: $additional;
+      }
+    }
+  }
+
   &__installation-link {
     display: flex;
     justify-content: space-between;
@@ -139,6 +166,25 @@
 
     &:hover svg {
       color: $primary;
+    }
+  }
+
+  &__status {
+    margin: 0 0 16px;
+  }
+
+  &__status-value {
+    @include b2;
+    color: $main-text;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin-right: 8px;
+      border-radius: 50%;
+      background-color: $success;
     }
   }
 }

@@ -62,6 +62,25 @@
   }
 
   &__card-active-desc {
+    margin-top: auto;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin-right: 8px;
+      vertical-align: baseline;
+      border-radius: 50%;
+      background-color: $success;
+    }
+  }
+
+  &__cloud-card-active-desc {
+    @include b2;
+    color: $minor-text;
+    margin-top: auto;
+
     &::before {
       content: '';
       display: inline-block;
