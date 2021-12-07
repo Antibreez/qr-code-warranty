@@ -1,12 +1,19 @@
 .device-promo {
   padding-top: 40px;
 
+  &__container {
+    & > .device-promo__mts-daichi-logo {
+      display: none;
+    }
+  }
+
   &__account-link {
     @include h7;
+    display: inline-block;
+    margin: 0 0 40px;
   }
 
   &__content {
-    padding-top: 40px;
     display: flex;
   }
 
@@ -31,6 +38,12 @@
       max-height: 100%;
       max-width: 100%;
     }
+  }
+
+  &__mts-daichi-logo {
+    width: 188px;
+    height: 18px;
+    margin: 0 0 24px;
   }
 
   &__item-title {
@@ -191,9 +204,33 @@
 
 @include mobile {
   .device-promo {
+    &__container {
+      & > .device-promo__mts-daichi-logo {
+        display: block;
+        width: 100%;
+        height: 15px;
+        margin: 0 0 8px;
+        text-align: right;
+
+        img {
+          width: 150px;
+          height: auto;
+        }
+      }
+    }
+
+    &__account-link {
+      margin: 0 0 24px;
+    }
+
     &__content {
       flex-direction: column;
-      padding-top: 24px;
+    }
+
+    &__details {
+      & > .device-promo__mts-daichi-logo {
+        display: none;
+      }
     }
 
     &__img-block {
