@@ -89,6 +89,14 @@
     padding: 14px;
     background-color: $grey200;
     border-radius: 8px;
+
+    .device-promo__registered-link {
+      @include b2;
+    }
+
+    &:hover .device-promo__registered-link {
+      color: $additional;
+    }
   }
 
   &__registered-date {
