@@ -3378,6 +3378,13 @@ body {
     padding: 14px;
     background-color: #f4f4f8;
     border-radius: 8px; }
+    .device-promo__registered .device-promo__registered-link {
+      margin: 0;
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 400; }
+    .device-promo__registered:hover .device-promo__registered-link {
+      color: #aad2ff; }
   .device-promo__registered-date {
     margin: 0;
     font-size: 12px;
