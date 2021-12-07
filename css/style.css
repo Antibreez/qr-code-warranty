@@ -3287,13 +3287,16 @@ body {
 
 .device-promo {
   padding-top: 40px; }
+  .device-promo__container > .device-promo__mts-daichi-logo {
+    display: none; }
   .device-promo__account-link {
     margin: 0;
     font-size: 12px;
     line-height: 14px;
-    font-weight: 500; }
+    font-weight: 500;
+    display: inline-block;
+    margin: 0 0 40px; }
   .device-promo__content {
-    padding-top: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
@@ -3327,6 +3330,10 @@ body {
     .device-promo__img-block img {
       max-height: 100%;
       max-width: 100%; }
+  .device-promo__mts-daichi-logo {
+    width: 188px;
+    height: 18px;
+    margin: 0 0 24px; }
   .device-promo__item-title {
     margin: 0;
     font-size: 10px;
@@ -3474,12 +3481,24 @@ body {
       background-color: #1ed77e; }
 
 @media (max-width: 767px) {
+  .device-promo__container > .device-promo__mts-daichi-logo {
+    display: block;
+    width: 100%;
+    height: 15px;
+    margin: 0 0 8px;
+    text-align: right; }
+    .device-promo__container > .device-promo__mts-daichi-logo img {
+      width: 150px;
+      height: auto; }
+  .device-promo__account-link {
+    margin: 0 0 24px; }
   .device-promo__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    padding-top: 24px; }
+            flex-direction: column; }
+  .device-promo__details > .device-promo__mts-daichi-logo {
+    display: none; }
   .device-promo__img-block {
     width: auto;
     max-width: 335px;
