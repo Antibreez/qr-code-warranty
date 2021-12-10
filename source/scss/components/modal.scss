@@ -105,6 +105,15 @@
     svg {
       width: 24px;
       height: 24px;
+      color: $main-text;
+    }
+  }
+
+  &:active,
+  &:focus,
+  &:visited {
+    svg {
+      color: $main-text;
     }
   }
 
