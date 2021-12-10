@@ -3078,7 +3078,10 @@ body {
       cursor: pointer; }
     .modal__close svg {
       width: 24px;
-      height: 24px; }
+      height: 24px;
+      color: #151515; }
+  .modal:active svg, .modal:focus svg, .modal:visited svg {
+    color: #151515; }
 
 @media (max-width: 767px) {
   .modal {
