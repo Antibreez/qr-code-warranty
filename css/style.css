@@ -3243,6 +3243,20 @@ body {
     color: #6c7684;
     text-align: center;
     margin: 0 0 24px; }
+  .code-not-found__support {
+    min-width: 335px; }
+
+@media (max-width: 767px) {
+  .code-not-found {
+    padding: 20px 0; }
+    .code-not-found__body {
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      padding-top: 24px; }
+    .code-not-found__support {
+      min-width: auto;
+      width: 100%; } }
 
 .device-chars__item {
   margin: 0 0 25px; }
