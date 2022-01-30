@@ -56,4 +56,24 @@
     text-align: center;
     margin: 0 0 24px;
   }
+
+  &__support {
+    min-width: 335px;
+  }
+}
+
+@include mobile {
+  .code-not-found {
+    padding: 20px 0;
+
+    &__body {
+      align-items: flex-start;
+      padding-top: 24px;
+    }
+
+    &__support {
+      min-width: auto;
+      width: 100%;
+    }
+  }
 }
