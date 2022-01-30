@@ -1,0 +1,16 @@
+#support-request {
+  .input-block__desc {
+    @include b2;
+    color: $minor-text;
+    margin: 8px 0 16px;
+    padding-left: 16px;
+  }
+
+  .input-select {
+    margin: 0 0 16px;
+  }
+}
+
+#support-request-serial {
+  text-transform: uppercase;
+}

@@ -1,0 +1,28 @@
+#support-request-success {
+  .support-request-success__picture {
+    width: 253px;
+    height: 253px;
+    background-image: url('../img/email-success.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 0 30px;
+  }
+
+  .modal__body {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .support-request-success__ok {
+    min-width: 250px;
+  }
+}
+
+@include mobile {
+  #support-request-success {
+    .support-request-success__ok {
+      width: 100%;
+    }
+  }
+}

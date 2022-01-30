@@ -3,6 +3,8 @@ let vh = window.innerHeight * 0.01
 const $body = document.querySelector('body')
 const triggers = document.querySelectorAll('[data-trigger]')
 
+const successRequestModal = document.querySelector('#support-request-success')
+
 function debounce(func) {
   var timer
   return function (event) {
@@ -71,3 +73,7 @@ triggers.forEach(trigger => {
     new Modal(trigger, modal)
   }
 })
+
+if (successRequestModal) {
+  new Modal(null, successRequestModal)
+}
