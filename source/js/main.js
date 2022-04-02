@@ -4,6 +4,7 @@ import './device-tabs'
 import './modal'
 import './input-block'
 import './input-select'
+import './upload'
 
 import './service-select'
 import './service-modal'

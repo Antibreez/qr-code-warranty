@@ -1,0 +1,119 @@
+.input-file {
+  padding-top: 16px;
+}
+
+.input-file__label {
+  padding: 10px 24px;
+  min-height: 96px;
+  display: flex;
+  align-items: center;
+  border: 1px dashed $grey300;
+  border-radius: 5px;
+  color: $grey400;
+  transition: color 0.2s, border-color 0.2s;
+
+  span {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  svg {
+    display: block;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+  }
+
+  &:hover,
+  &.highlight {
+    cursor: pointer;
+    color: $main-text;
+    border-color: $main-text;
+  }
+}
+
+.input-file__text {
+  display: flex;
+  //align-items: center;
+}
+
+.input-file__progress,
+.input-file__result {
+  padding: 10px 24px;
+  min-height: 96px;
+  display: flex;
+  align-items: center;
+  border: 1px solid $grey300;
+  border-radius: 5px;
+  color: $grey400;
+}
+
+.input-file__progress-bar {
+  position: relative;
+  flex-grow: 1;
+  height: 4px;
+  margin-right: 16px;
+  background-color: $grey200;
+  font-size: 14px;
+  line-height: 21px;
+  color: $grey400;
+}
+
+.input-file__progress-bar-current {
+  height: 100%;
+  background-color: $primary;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
+
+.input-file__result {
+  position: relative;
+  padding-left: 100px;
+  overflow: hidden;
+}
+
+.input-file__result-img-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $grey200;
+}
+
+.input-file__result-name {
+  display: block;
+  padding-right: 30px;
+  color: $main-text;
+  max-width: calc(100% - 30px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.input-file__result-clear {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-size: 0;
+  line-height: 0;
+  color: $grey400;
+  margin-left: auto;
+  flex-shrink: 0;
+  transition: color 0.2s;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: $main-text;
+  }
+}

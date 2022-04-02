@@ -102,6 +102,36 @@
                   </p>
                 </div>
               </div>
+
+              <div class="input-file">
+                <label class="input-file__label">
+                  <input
+                    type="file"
+                    class="input-file__input visually-hidden"
+                  />
+                  <p class="input-file__text">
+                    <svg><use xlink:href="img/sprite.svg#upload"></use></svg>
+                    <span> Приложите фото этикетки вашего кондиционера * </span>
+                  </p>
+                </label>
+                <div class="input-file__progress" style="display: none">
+                  <div class="input-file__progress-bar">
+                    <div class="input-file__progress-bar-current"></div>
+                  </div>
+                  <span class="input-file__progress-bar-value"
+                    ><span></span>%</span
+                  >
+                </div>
+                <div class="input-file__result" style="display: none">
+                  <div class="input-file__result-img-block">
+                    <img src="" alt="" />
+                  </div>
+                  <span class="input-file__result-name">Filename.jpeg</span>
+                  <button type="button" class="input-file__result-clear">
+                    <svg><use xlink:href="img/sprite.svg#cross"></use></svg>
+                  </button>
+                </div>
+              </div>
             </div>
             <div class="modal__btn-block">
               <button
