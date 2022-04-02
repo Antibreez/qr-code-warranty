@@ -4,4 +4,7 @@
 </symbol><symbol id="link" viewBox="0 0 24 24">
 <path d="M12 12L21 3V10V3H14" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M9 3H5C3.895 3 3 3.895 3 5V19C3 20.105 3.895 21 5 21H19C20.105 21 21 20.105 21 19V15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol><symbol id="upload" viewBox="0 0 24 24">
+<path d="M3 16V21H21V16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<path d="M12 16V3M12 3L16.5 7.5M12 3L7.5 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
 </symbol></svg>
